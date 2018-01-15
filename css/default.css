@@ -93,14 +93,14 @@ body>.body>div>div>.shadowbar {left:37px; top:2px; right:8px;}
 .body>div>.MNK>.data {color:#FE9;}
 .body>div>.DRG>.data {color:#7CF;}
 .body>div>.NIN>.data {color:#F69;}
-.body>div>.SAM>.data {color:#FFFFFF; text-shadow:0px 0px 1px rgb(85, 34, 0), 0px 0px 1px rgb(85, 34, 0), 0px 0px 1px rgb(85, 34, 0);}
+.body>div>.SAM>.data {color:#FFF;}
 
 .body>div>.BRD>.data {color:#DF7;}
 .body>div>.MCH>.data {color:#BFC;}
 
 .body>div>.BLM>.data {color:#EBF;}
 .body>div>.SMN>.data {color:#DF7;}
-.body>div>.RDM>.data {color:#FFF;  text-shadow:0px 0px 1px #896DDA, 0px 0px 1px #896DDA, 0px 0px 1px #896DDA;}
+.body>div>.RDM>.data {color:#FFF;}
 
 .body>div>.YOU>.data {font-weight:bold;}
 
