@@ -180,7 +180,7 @@ body>.body>div>div>.shadowbar {left:37px; top:2px; right:8px;}
 *>.job::after{content:" "; background:url(../image/icons.png) no-repeat; background-size:200px 100px; filter:drop-shadow(0px 0px 1px #AB7813) drop-shadow(0px 0px 1px #AB7813); -webkit-filter:drop-shadow(0px 0px 1px #AB7813) drop-shadow(0px 0px 1px #AB7813); width:20px; height:20px; position:absolute;}
 .LMB>.job::after {background-position:-180px -40px;}
 .Pld>.job::after {background-position:-40px -20px;}
-.Mrd>.job::after {background-position:0px -40px;}
+.Mrd>.job::after {background-position:-40px 0px;}
 .War>.job::after {background-position:-80px -20px;}
 .Drk>.job::after {background-position:0px -80px;}
 .Cnj>.job::after {background-position:0px -20px;}
