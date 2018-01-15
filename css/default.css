@@ -1,5 +1,5 @@
 html, body{margin:0px; padding:0px;}
-* {font-family:'맑은 고딕'; cursor:default;}
+* {font-family:'맑은 고딕'; cursor:default; user-select:none; -moz-user-select:none; -webkit-user-select:none; -ms-user-select:none;}
 
 ::-webkit-scrollbar {width:0px;}
 ::-webkit-scrollbar-track {background:rgba(255,255,255,.1); border-radius: 3px;}

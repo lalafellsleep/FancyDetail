@@ -1,7 +1,8 @@
 var userLang = "en";
 userLang = navigator.language || navigator.userLanguage;
 userLang = userLang.substring(0, 2);
-
+if(Languages.lang.indexOf(userLang) == -1)
+	userLang = "en";
 var Languages = {
 	"lang":{
 		"ko":"한국어",
@@ -419,7 +420,6 @@ var Languages = {
 		}
 	}
 };
-
 var option = {
 	displayhps:true,
 	nickhide:true,
@@ -431,7 +431,6 @@ var option = {
 	fonts:"Noto Sans KR",
 	fontsize:12
 };
-
 var curLang = new function()
 {
 	this.lang = Languages.lang[userLang];
@@ -441,7 +440,6 @@ var curLang = new function()
 		{
 			if(this[Languages.data[l]] == undefined)
 				this[Languages.data[l]] = [];
-
 			for(var i in Languages[Languages.data[l]])
 			{
 				this[Languages.data[l]][i] = Languages[Languages.data[l]][i][userLang];
@@ -449,9 +447,7 @@ var curLang = new function()
 		}
 	}
 };
-
 $(".item[data-id=language]").html(curLang.lang);
-
 if(curLang != undefined)
 {
 	$("[data-id]").each(function()
@@ -461,13 +457,11 @@ if(curLang != undefined)
 			$(this).attr("label", curLang.settings[$(this).attr("data-id")]);
 		}
 	});
-
 	for(var i in curLang.html)
 	{
 		var $element = $("#" + i );
 		$element.text(curLang.html[i]);
 	}
-
 	for(var i in curLang.label)
 	{
 		$("[data-label]").each(function()
