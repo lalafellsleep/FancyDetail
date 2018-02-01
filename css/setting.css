@@ -10,7 +10,11 @@ html {
 	background: #F0F0F0;
 }
 * {
-	font-family: '맑은 고딕', 'Noto Sans KR';
+	font-family: '맑은 고딕', 'Meiryo', 'Noto Sans KR', 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+ul {
+	margin:0;
+	padding:0;
 }
 .header {
 	height: 56px;
