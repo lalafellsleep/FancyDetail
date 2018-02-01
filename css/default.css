@@ -1,5 +1,5 @@
 html, body{margin:0px; padding:0px;}
-* {font-family:'맑은 고딕', 'Microsoft Netgothic'; cursor:default; user-select:none; -moz-user-select:none; -webkit-user-select:none; -ms-user-select:none;}
+* {font-family:'맑은 고딕'; cursor:default;}
 
 ::-webkit-scrollbar {width:0px;}
 ::-webkit-scrollbar-track {background:rgba(255,255,255,.1); border-radius: 3px;}
@@ -8,10 +8,10 @@ html, body{margin:0px; padding:0px;}
 
 .designmode div {box-shadow:inset 1px 1px 0px rgba(0,0,0,0.2), inset -1px -1px 0px rgba(0,0,0,0.2);}
 
-.header {min-height:36px; position:fixed; left:2px; top:2px; right:2px; bottom:calc(100% - 38px); font-family:'맑은 고딕', 'Microsoft Netgothic'; box-shadow:0px 0px 2px rgba(0,0,0,0.5) !important; border-radius:4px; background:rgba(75, 0, 187, 0.5); color:#FFF; text-shadow:0px 0px 1px #000, 0px 0px 1px #808080, 0px 0px 1px #808080, 0px 0px 2px #808080, 0px 0px 3px #404040; -webkit-filter:drop-shadow(0px 0px 2px rgba(0,0,0,0.5)); filter:drop-shadow(0px 0px 2px rgba(0,0,0,0.5)); overflow:hidden; transition:0.5s; z-index:100;}
+.header {min-height:36px; position:fixed; left:2px; top:2px; right:2px; bottom:calc(100% - 38px); font-family:'맑은 고딕'; box-shadow:0px 0px 2px rgba(0,0,0,0.5) !important; border-radius:4px; background:rgba(75, 0, 187, 0.5); color:#FFF; text-shadow:0px 0px 1px #000, 0px 0px 1px #808080, 0px 0px 1px #808080, 0px 0px 2px #808080, 0px 0px 3px #404040; -webkit-filter:drop-shadow(0px 0px 2px rgba(0,0,0,0.5)); filter:drop-shadow(0px 0px 2px rgba(0,0,0,0.5)); overflow:hidden; transition:0.5s; z-index:100;}
 
 .encounter {margin:5px; height:26px; line-height:26px; font-size:24px; width:calc(100% - 150px);}
-.encounter>div {float:left; font-family:'맑은 고딕', 'Microsoft Netgothic';}
+.encounter>div {float:left; font-family:'맑은 고딕';}
 .encounter>.encounter_list{width:24px; height:24px; border-radius:50%; border:2px solid #FFF; box-sizing:border-box; margin:1px;}
 .encounter>.duration{font-family:'Aldrich'; line-height:28px; padding-left:2px;}
 .encounter>.title {position:absolute; font-size:12px; left:140px; top:3px; line-height:12px; font-weight:bold;}
@@ -93,14 +93,14 @@ body>.body>div>div>.shadowbar {left:37px; top:2px; right:8px;}
 .body>div>.MNK>.data {color:#FE9;}
 .body>div>.DRG>.data {color:#7CF;}
 .body>div>.NIN>.data {color:#F69;}
-.body>div>.SAM>.data {color:#FFF;}
+.body>div>.SAM>.data {color:#FFFFFF; text-shadow:0px 0px 1px rgb(85, 34, 0), 0px 0px 1px rgb(85, 34, 0), 0px 0px 1px rgb(85, 34, 0);}
 
 .body>div>.BRD>.data {color:#DF7;}
 .body>div>.MCH>.data {color:#BFC;}
 
 .body>div>.BLM>.data {color:#EBF;}
 .body>div>.SMN>.data {color:#DF7;}
-.body>div>.RDM>.data {color:#FFF;}
+.body>div>.RDM>.data {color:#FFF;  text-shadow:0px 0px 1px #896DDA, 0px 0px 1px #896DDA, 0px 0px 1px #896DDA;}
 
 .body>div>.YOU>.data {font-weight:bold;}
 
@@ -180,7 +180,7 @@ body>.body>div>div>.shadowbar {left:37px; top:2px; right:8px;}
 *>.job::after{content:" "; background:url(../image/icons.png) no-repeat; background-size:200px 100px; filter:drop-shadow(0px 0px 1px #AB7813) drop-shadow(0px 0px 1px #AB7813); -webkit-filter:drop-shadow(0px 0px 1px #AB7813) drop-shadow(0px 0px 1px #AB7813); width:20px; height:20px; position:absolute;}
 .LMB>.job::after {background-position:-180px -40px;}
 .Pld>.job::after {background-position:-40px -20px;}
-.Mrd>.job::after {background-position:-40px 0px;}
+.Mrd>.job::after {background-position:0px -40px;}
 .War>.job::after {background-position:-80px -20px;}
 .Drk>.job::after {background-position:0px -80px;}
 .Cnj>.job::after {background-position:0px -20px;}
