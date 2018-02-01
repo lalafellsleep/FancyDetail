@@ -1,9 +1,11 @@
 # cleaveore.FancyAmethyst
 
 ###### Get Stable Online Latest Version:
+> Current Stable Version: 0.4.1
 https://amethyst.ffxiv.io/
 
 ###### you can get online UNSTABLE (git master version) HERE
+> Current Unstable Version: 0.4.2+
 https://amethyst.ffxiv.io/unstable/
 
 ###### Final Fantasy® XIV Copyright
