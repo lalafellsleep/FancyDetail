@@ -1,8 +1,6 @@
 var userLang = "en";
 userLang = navigator.language || navigator.userLanguage;
 userLang = userLang.substring(0, 2);
-if (Languages.lang.indexOf(userLang) == -1)
-	userLang = "en";
 
 var Languages = {
 	"lang":{
@@ -421,6 +419,9 @@ var Languages = {
 		}
 	}
 };
+
+if (Languages.lang[userLang] == undefined)
+	userLang = "en";
 
 var option = {
 	displayhps:true,
