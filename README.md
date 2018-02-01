@@ -1,5 +1,8 @@
 # cleaveore.FancyAmethyst
 
+###### Get Stable Online Latest Version:
+https://amethyst.ffxiv.io/
+
 ###### you can get online UNSTABLE (git master version) HERE
 https://amethyst.ffxiv.io/unstable/
 
