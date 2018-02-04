@@ -514,8 +514,8 @@ var Languages = {
 			"ja":"バリア"
 		},
 		"effectiveHeal":{
-			"en":"유효힐",
-			"ko":"Eff.H",
+			"en":"Eff.H",
+			"ko":"유효힐",
 			"ja":"有効ヒール"
 		}
 	}
