@@ -18,7 +18,7 @@ ul {
 }
 .header {
 	height: 56px;
-	background: #9C77D5;
+	background: rgb(188, 143, 255);
 	color: #FFF;
 	box-shadow: 0px 0px 4px #000;
 	line-height: 56px;

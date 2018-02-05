@@ -320,7 +320,7 @@ var Languages = {
 		"setting-in-out":{
 			"ko":"설정 내보내기/들여오기",
 			"en":"Set Export/Import",
-			"en":"設定のエクスポート／インポート"
+			"ja":"設定のエクスポート／インポート"
 		},
 		"overlayinfo":{
 			"ko":"오버레이 정보",
@@ -364,12 +364,12 @@ var Languages = {
 		"widthfit":{
 			"ko":"좌우에 맞게",
 			"en":"Width fit",
-			"en":"横幅を合わせる"
+			"ja":"横幅を合わせる"
 		},
 		"heightfit":{
 			"ko":"상하에 맞게",
 			"en":"Height fit",
-			"en":"縦幅を合わせる"
+			"ja":"縦幅を合わせる"
 		},
 		"original":{
 			"ko":"원본",

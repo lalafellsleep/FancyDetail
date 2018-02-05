@@ -15,9 +15,7 @@ html, body{margin:0px; padding:0px;}
 .encounter>div {float:left; font-family:'Noto Sans KR';}
 .encounter>.encounter_list {position:absolute; left:0px; top:-2px; width:16px; height:32px; box-sizing:border-box;}
 .encounter>.duration {font-family:'Aldrich'; height:28px; padding-left:24px; font-size:22px; line-height:28px;}
-.encounter>.title {position:absolute; font-size:12px; left:140px; top:1px; line-height:12px; font-weight:bold;}
-.encounter>.RDPS, .encounter>.RHPS {padding-left:18px; position:absolute; left:140px; font-size:12px; line-height:14px; top:13px; background-size:auto 100%; background-repeat:no-repeat; background-image:url(../image/DPS.svg);}
-.encounter>.RHPS {margin-left:60px; background-image:url(../image/healer.svg);}
+.encounter>.title {position:absolute; font-size:14px; left:140px; top:2px; line-height:25px;}
 
 .encounter>.refreshbtn,
 .encounter>.capturebtn,
@@ -36,6 +34,12 @@ html, body{margin:0px; padding:0px;}
 .encounter>.menubtn:hover,
 .encounter>.encounter_list:hover {background:rgba(255,255,255,.3);}
 
+.encounter>.refreshbtn:active,
+.encounter>.capturebtn:active,
+.encounter>.endencounterbtn:active,
+.encounter>.menubtn:active,
+.encounter>.encounter_list:active {background:rgba(0,0,0,.3);}
+
 .encounter>.refreshbtn::before,
 .encounter>.capturebtn::before,
 .encounter>.endencounterbtn::before,
@@ -44,9 +48,9 @@ html, body{margin:0px; padding:0px;}
 
 .encounter i {font-size:20px; text-shadow:none; border-radius:50%; overflow:hidden;}
 
-.encounter>.refreshbtn {margin-right:78px;}
-.encounter>.capturebtn {margin-right:52px;}
-.encounter>.endencounterbtn {margin-right:26px;}
+.encounter>.refreshbtn {margin-right:75px;}
+.encounter>.capturebtn {margin-right:50px;}
+.encounter>.endencounterbtn {margin-right:25px;}
 
 .encounter>.endencounterbtn::before {-webkit-mask-image:url(../image/endencounter.svg);}
 .encounter>.refreshbtn::before {-webkit-mask-image:url(../image/reload.svg);}
@@ -55,7 +59,7 @@ html, body{margin:0px; padding:0px;}
 .encounter>.encounter_list::before {position:absolute; left:0px; top:0px; width:16px; height:32px; -webkit-mask-image:url(../image/encounters.svg); -webkit-mask-size:16px 32px;}
 
 body>.body {position:fixed; left:0px; bottom:0px; right:0px; top:28px; overflow-x:hidden; overflow-y:auto; box-shadow:none; border-radius:0px 0px 3px 3px;}
-body>.body>div {padding:0px 2px 0px 2px; position:relative; -webkit-filter:drop-shadow(0px 0px 2px rgba(0,0,0,0.75)); filter:drop-shadow(0px 0px 2px rgba(0,0,0,0.75)); width:100%; box-sizing:border-box;}
+body>.body>div {padding:0px 2px 0px 2px; position:relative; width:100%; box-sizing:border-box;}
 body>.body>div>div {position:absolute; height:24px; width:100%; box-shadow:none; box-sizing:border-box; transition:.5s;}
 body>.body>div>div .job {width:24px; height:24px; border:2px solid #FFF; border-radius:50%; box-sizing:border-box; position:absolute; left:4px; top:0px; box-shadow:none; background-color:#555; background-size:200px 100px;}
 body>.body>div>div .barcover {position:absolute; box-shadow:none; height:20px; left:36px; right:8px; top:2px; opacity:0.8;}
@@ -152,15 +156,18 @@ body>.body>div>div>.shadowbar {left:37px; top:2px; right:8px;}
 .body>div>div .pbar .leftdeco_inner,
 .body>div>div .overhealbar .leftdeco_inner {border-color:transparent !important;}
 
-.footer {position:fixed; width:16px; height:16px; bottom:0px; right:0px; opacity:.5; -webkit-mask-image:url(../image/sizer.svg); -webkit-mask-repeat:no-repeat; -webkit-mask-origin:100% 100%; background-color:#FFF;}
+.footer {position:fixed; left:0px; bottom:0px; right:0px; height:16px; background:rgba(0,0,0,.25); border-radius:0px 0px 3px 3px; color:#FFF;}
+.footer>.RDPS, .footer>.RHPS {padding-left:18px; position:absolute; left:17px; font-size:12px; line-height:14px; top:1px; background-size:auto 100%; background-repeat:no-repeat; background-image:url(../image/DPS.svg);}
+.footer>.RHPS {margin-left:60px; background-image:url(../image/healer.svg);}
+.footer>.resizer {position:fixed; width:16px; height:16px; bottom:0px; right:0px; opacity:.5; -webkit-mask-image:url(../image/sizer.svg); -webkit-mask-repeat:no-repeat; -webkit-mask-origin:100% 100%; background-color:#FFF;}
 
 body>.body>div.dpsheader, 
-body>.body>div.hpsheader {height:16px; text-align:right; padding:0px; margin:0px; padding-right:3px; padding-left:80px; overflow:hidden; line-height:0px;}
+body>.body>div.hpsheader {height:16px; text-align:right; padding:0px; margin:0px; padding-right:2px; padding-left:80px; overflow:hidden; line-height:0px;}
 body>.body>div.dpsheader>span,
-body>.body>div.hpsheader>span {margin-top:2px; height:14px; line-height:14px; display:inline-block; width:48px; font-size:11px; font-family:'맑은 고딕'; background:rgba(127,127,127,0.5);  border-radius:4px; text-align:center; margin-left:1px; color:#FFF; text-shadow:0px 0px 1px #FFF, 0px 0px 2px #000; padding-left:2px; padding-right:2px; box-sizing:border-box;}
+body>.body>div.hpsheader>span {margin-top:2px; height:14px; line-height:14px; display:inline-block; width:48px; font-size:11px; font-family:'맑은 고딕'; background:rgba(0,0,0,0.5);  border-radius:2px; text-align:center; margin-left:1px; color:#FFF; text-shadow:0px 0px 1px #FFF, 0px 0px 2px #000; padding-left:2px; padding-right:2px; box-sizing:border-box;}
 
 body>.body>div.dpsheader>.hilight, 
-body>.body>div.hpsheader>.hilight {background:rgba(75, 0, 187, 0.75); box-shadow:inset 0px 0px 1px #FFF;}
+body>.body>div.hpsheader>.hilight {background:rgba(75, 0, 187, 0.75);}
 
 body>.body>div.dpsheader>span:active,
 body>.body>div.hpsheader>span:active {box-shadow:inset 0px 0px 1px #FFF; background:rgba(255,255,255,.5);}

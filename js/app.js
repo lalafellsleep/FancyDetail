@@ -25,7 +25,7 @@ if(option.fonts == undefined)
 	localStorage.setItem("fancyset", JSON.stringify(option));
 	setCSS();
 }
-if(!onACTWebSocket)
+if(!onACTWebSocket && navigator.userAgent.indexOf("Aliapoh") == -1)
 {
 	$(".capturebtn").remove();
 	$(".refreshbtn").css("margin-right", "52px");
@@ -88,7 +88,7 @@ function setCSS()
 		if(option.topbgcolor != undefined)
 		{
 			css += ".header {background-color:" + option.topbgcolor + ";}";
-			css += "body>.body>.dpsheader>.hilight, body>.body>.hpsheader>.hilight {background-color:" + option.topbgcolor.replace(/(rgba\(.+,.+,.+),.+\)/, "$1, .75)") + " !important;}";
+			css += "body>.body>.dpsheader>.hilight, body>.body>.hpsheader>.hilight {background-color:" + option.topbgcolor.replace(/(rgba\(.+,.+,.+),.+\)/, "$1, 1)") + " !important;}";
 		}
 
 		$("#customcss").html(css);
@@ -146,9 +146,9 @@ function opensetting()
 			return;
 	}
 	if(!onACTWebSocket)
-		w = window.open("./popup.html", "settingwindow", "menubar=0,resizable=0,width=760,height=620");
+		w = window.open("./popup.html", "settingwindow", "menubar=0,resizable=0,width=980,height=640");
 	else 
-		w = window.open("./popup.html", "settingwindow" + (Math.random() * 1000).toFixed(), "menubar=0,resizable=0,width=760,height=560");
+		w = window.open("./popup.html", "settingwindow" + (Math.random() * 1000).toFixed(), "menubar=0,resizable=0,width=980,height=640");
 }
 
 function classExists(p, c)
@@ -162,12 +162,12 @@ function onOverlayDataUpdate(e)
 	if(stopEnc) return;
 	createHeader();
 	listResort(e);
+	window.lastData = e;
 }
 
 function createHeader()
 {
 	var replaceColName = curLang.columns;
-	
 	var columnData = {
 		"dps":{
 			"element":".dpsheader",
@@ -184,7 +184,7 @@ function createHeader()
 	for(var cdata in columnData)
 	{
 		var x = columnData[cdata];
-
+		$(x.element).html("");
 		for(var i in x.data)
 		{
 			var coltext = i;
@@ -192,11 +192,8 @@ function createHeader()
 				if(replaceColName[i] != undefined)
 					coltext = replaceColName[i];
 
-			if($(x.element).find("[data-column=\"" + i + "\"]").length <= 0)
-			{
-				$(x.element).append("<span data-column='" + i + "'>" + coltext + "</span>");
-				$(x.element + ">[data-column=\"" + i + "\"]").width(x.data[i]);
-			}
+			$(x.element).append("<span data-column='" + i + "'>" + coltext + "</span>");
+			$(x.element + ">[data-column=\"" + i + "\"]").width(x.data[i]);
 		}
 		$(x.element + ">span").removeClass("hilight");
 		$(x.element + ">[data-column=\"" + x.sortkey + "\"]").addClass("hilight");
@@ -206,19 +203,8 @@ function createHeader()
 				sortkey_dps = $(this).attr("data-column");
 			else
 				sortkey_hps = $(this).attr("data-column");
-				
 			createHeader();
 			listResort();
-		});
-		$(x.element + ">span").each(function()
-		{
-			var b = !1;
-			for(var n in x.data)
-				if(n == $(this).attr("data-column"))
-					b = !0;
-			
-			if(!b)
-				$(this).remove();
 		});
 	}
 }
@@ -226,10 +212,42 @@ function createHeader()
 function listResort(data)
 {
 	$(".body>*").show();
+	if(data == undefined)
+		data = window.lastData;
+		
 	$(".encounter>.duration").text(data.Encounter.duration);
 	$(".encounter>.title").text(data.Encounter.title);
-	$(".encounter>.RDPS").text(Math.floor(data.Encounter.encdps));
-	$(".encounter>.RHPS").text(Math.floor(data.Encounter.enchps));
+	$(".footer>.RDPS").text(Math.floor(data.Encounter.encdps));
+	$(".footer>.RHPS").text(Math.floor(data.Encounter.enchps));
+
+	$('.ncount').each(function()
+	{
+		if($(this).is(".RDPS"))
+			if($(this).attr("data-prev") == data.Encounter.encdps) return;
+		else if($(this).is(".RHPS"))
+			if($(this).attr("data-prev") == data.Encounter.enchps) return;
+			
+		if(option.numbanim == !0)
+		{
+			$(this).prop('Counter',$(this).attr("data-prev"))
+			.animate({
+			Counter: $(this).text()
+			},
+			{
+				duration:500,
+				easing:'swing',
+				step:function(now)
+				{
+					$(this).text(Math.ceil(now));
+				}
+			});
+
+			if($(this).is(".RDPS"))
+				$(this).attr("data-prev", data.Encounter.encdps);
+			else if($(this).is(".RHPS"))
+				$(this).attr("data-prev", data.Encounter.enchps);
+		}
+	});
 	/*
 	var start = new Date();
 	var dpshps = {
@@ -273,24 +291,6 @@ function listResort(data)
 		$(".encounter>.RDPS").text(Math.floor(lastCombat.Encounter.encdps));
 		$(".encounter>.RHPS").text(Math.floor(lastCombat.Encounter.enchps));
 
-		$('.ncount')
-		.each(function()
-		{
-			if(option.numbanim == !0)
-			{
-				$(this).prop('Counter',$(this).attr("data-prev"))
-				.animate({
-				Counter: $(this).text()
-				},{
-				duration:500,
-				easing:'swing',
-				step:function(now)
-				{
-					$(this).text(Math.ceil(now));
-				}
-				});
-			}
-		});
 
 		$(".encounter>.RDPS").attr("data-prev", Math.floor(lastCombat.Encounter.encdps));
 		$(".encounter>.RHPS").attr("data-prev", Math.floor(lastCombat.Encounter.enchps));
