@@ -1,39 +1,26 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
-<svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="256px"
-	 height="256px" viewBox="0 0 256 256" enable-background="new 0 0 256 256" xml:space="preserve">
-<g id="Layer_1">
-	<circle fill="#9C77D5" stroke="#FFFFFF" stroke-width="5" stroke-miterlimit="10" cx="128" cy="128" r="114.5"/>
-	<path fill="#5A486A" d="M129.75,242.483c0,0,79.188,5.386,108.344-82.924l-53.927-61.236L200.5,139.99l3.667,35.833L173,193.323
-		l-43.223,6.833l-42.444-6.833l-32-17L129.75,242.483z"/>
-	<circle fill="none" stroke="#FFFFFF" stroke-width="5" stroke-miterlimit="10" cx="128" cy="128" r="114.5"/>
-	<line fill="none" stroke="#FFFFFF" stroke-width="5" stroke-miterlimit="10" x1="129.777" y1="40.654" x2="129.777" y2="200.156"/>
-	<line fill="none" stroke="#FFFFFF" stroke-width="5" stroke-miterlimit="10" x1="55.333" y1="176.323" x2="184.167" y2="98.323"/>
-	<line fill="none" stroke="#FFFFFF" stroke-width="5" stroke-miterlimit="10" x1="76.25" y1="97.5" x2="204.167" y2="175.823"/>
-	<polygon fill="#9C77D5" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" points="129.777,40.654 101.583,62.583 
-		76.25,97.5 59.5,140.656 55.333,176.323 87.333,193.323 129.777,200.156 173,193.323 204.167,175.823 200.5,139.99 184.167,98.323 
-		158.667,62.323 	"/>
-	<polyline fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" points="129.777,40.654 113.833,71.656 
-		98.667,113.99 91.333,154.656 87.333,193.323 	"/>
-	<polyline fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" points="129.777,40.654 145.037,72.143 
-		161.167,113.49 168.667,154.156 173,193.323 	"/>
-	<polyline fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" points="204.167,175.823 188.167,149.323 
-		161.167,113.49 129.75,83.156 101.583,62.583 	"/>
-	<polyline fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" points="204.167,175.823 171.064,175.823 
-		129.777,169.987 71.667,149.156 59.5,140.656 	"/>
-	<polyline fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" points="55.333,176.323 71.667,149.156 
-		98.667,113.99 129.75,83.156 158.667,62.323 	"/>
-	<polyline fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" points="55.333,176.323 89.144,175.823 
-		129.777,169.987 188.167,149.323 200.5,139.99 	"/>
-	<line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" x1="89.144" y1="175.823" x2="129.777" y2="200.156"/>
-	
-		<line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" x1="129.777" y1="200.156" x2="171.064" y2="175.823"/>
-	<line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" x1="184.167" y1="98.323" x2="188.167" y2="149.323"/>
-	<line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" x1="184.167" y1="98.323" x2="145.037" y2="72.143"/>
-	<line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" x1="113.833" y1="71.656" x2="76.25" y2="97.5"/>
-	<line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" x1="76.25" y1="97.5" x2="71.667" y2="149.156"/>
-</g>
-<g id="Layer_2">
-</g>
+<svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="256px" height="256px" viewBox="0 0 256 256" enable-background="new 0 0 256 256" xml:space="preserve">
+	<circle fill="#9C77D5" cx="128" cy="128" r="123.228"/>
+	<polygon fill="#6717CF" points="162.744,211.882 128,218.792 93.255,211.881 63.8,192.199 44.119,162.744 37.208,128 44.119,93.256 63.801,63.801 93.255,44.119 127.999,37.209 162.743,44.12 192.198,63.802 211.88,93.255 218.79,128 211.88,162.745 192.199,192.2"/>
+	<rect x="63.824" y="63.822" transform="matrix(0.9239 0.3827 -0.3827 0.9239 58.7259 -39.2401)" fill="#9359FF" width="128.354" height="128.354"/>
+	<polygon fill="#AA5BFF" points="128,197.465 78.881,177.118 58.536,128 78.881,78.881 127.999,58.536 177.119,78.881 197.465,127.999 177.118,177.119 "/>
+	<polygon fill="#C5B3FF" points="78.881,78.881 44.149,93.268 58.536,128 "/>
+	<polygon fill="#FFFFFF" points="78.881,78.881 93.269,44.148 127.999,58.536 "/>
+	<polygon fill="#662D91" points="78.881,177.118 93.255,211.881 63.8,192.199 44.15,162.732 "/>
+	<polygon fill="#49205C" points="93.255,211.881 128,197.465 162.733,211.851 128,218.792 "/>
+	<polygon fill="#311466" points="177.118,177.119 211.88,162.745 192.199,192.2 162.733,211.851 "/>
+	<polygon fill="#550091" points="197.465,127.999 211.88,162.745 218.79,128 211.852,93.268 "/>
+	<polygon fill="#FFFFFF" points="127.999,58.536 162.743,44.12 177.119,78.881 "/>
+	<polygon fill="#43226B" points="162.743,44.12 177.119,78.881 211.852,93.268 192.198,63.802 "/>
+	<polygon fill="#311466" points="78.881,78.881 93.269,44.148 63.801,63.801 44.149,93.268 "/>
+	<polygon opacity="0.8" fill="#7428D1" points="58.525,128.004 127.99,128.004 78.87,177.123 "/>
+	<polygon fill="#49205C" points="177.118,177.119 127.99,128.004 197.465,127.999 "/>
+	<polygon opacity="0.2" fill="#49205C" points="177.118,177.119 127.99,128.004 128,197.465 "/>
+	<polygon fill="#550091" points="177.119,78.881 197.465,127.999 127.99,128.004 "/>
+	<polygon opacity="0.1" points="78.881,78.881 58.525,128.004 127.99,128.004 "/>
+	<polygon fill="#7428D1" points="127.99,128.004 177.119,78.881 127.999,58.536 "/>
+	<polygon fill="#7428D1" points="128,197.465 162.733,211.851 177.118,177.119 "/>
+	<polygon opacity="0.6" fill="#9359FF" points="197.465,127.999 177.119,78.881 211.852,93.268 "/>
+	<path opacity="0.5" d="M250.761,122.364l-58.563-58.563L63.8,192.199l58.561,58.562c1.87,0.084,3.749,0.134,5.639,0.134 c67.872,0,122.895-55.022,122.895-122.895C250.895,126.11,250.845,124.233,250.761,122.364z"/>
+	<path fill="#FFFFFF" d="M128,0C57.308,0,0,57.308,0,128s57.308,128,128,128s128-57.308,128-128S198.692,0,128,0z M128,249.531 C60.88,249.531,6.469,195.12,6.469,128C6.469,60.88,60.88,6.469,128,6.469c67.12,0,121.531,54.412,121.531,121.531 C249.531,195.12,195.12,249.531,128,249.531z"/>
 </svg>
