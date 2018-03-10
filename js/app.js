@@ -130,10 +130,9 @@ var w;
 loadSetting();
 setCSS();
 createHeader();
-$(".body>*").hide();
 
-$(".menubtn")
-.click(function()
+$(".body>*").hide();
+$(".menubtn").click(function()
 {
 	opensetting();
 });
@@ -146,9 +145,9 @@ function opensetting()
 			return;
 	}
 	if(!onACTWebSocket)
-		w = window.open("./popup.html", "settingwindow", "menubar=0,resizable=0,width=980,height=640");
+		w = window.open("./setting.html", "settingwindow", "menubar=0,resizable=0,width=980,height=640");
 	else 
-		w = window.open("./popup.html", "settingwindow" + (Math.random() * 1000).toFixed(), "menubar=0,resizable=0,width=980,height=640");
+		w = window.open("./setting.html", "settingwindow" + (Math.random() * 1000).toFixed(), "menubar=0,resizable=0,width=980,height=640");
 }
 
 function classExists(p, c)
