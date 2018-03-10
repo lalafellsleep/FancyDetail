@@ -20,7 +20,7 @@ html, body{margin:0px; padding:0px;}
 .encounter>.refreshbtn,
 .encounter>.capturebtn,
 .encounter>.endencounterbtn,
-.encounter>.menubtn {width:22px; height:22px; box-sizing:border-box; background:rgba(255,255,255,.15); border-radius:50%; position:absolute; right:3px; top:3px; overflow:hidden;}
+.encounter>.menubtn {width:24px; height:24px; box-sizing:border-box; background:rgba(255,255,255,.15); border-radius:50%; border:2px solid #FFF; position:absolute; right:3px; top:3px; overflow:hidden;}
 
 .encounter>.refreshbtn,
 .encounter>.capturebtn,
@@ -44,13 +44,13 @@ html, body{margin:0px; padding:0px;}
 .encounter>.capturebtn::before,
 .encounter>.endencounterbtn::before,
 .encounter>.menubtn::before,
-.encounter>.encounter_list::before {content:" "; position:absolute; width:20px; height:20px; top:1px; left:1px; background-color:#FFF; -webkit-mask-size:20px 20px;}
+.encounter>.encounter_list::before {content:" "; position:absolute; width:20px; height:20px; top:0px; left:0px; background-color:#FFF; -webkit-mask-size:20px 20px;}
 
 .encounter i {font-size:20px; text-shadow:none; border-radius:50%; overflow:hidden;}
 
-.encounter>.refreshbtn {margin-right:75px;}
-.encounter>.capturebtn {margin-right:50px;}
-.encounter>.endencounterbtn {margin-right:25px;}
+.encounter>.refreshbtn {margin-right:81px;}
+.encounter>.capturebtn {margin-right:54px;}
+.encounter>.endencounterbtn {margin-right:27px;}
 
 .encounter>.endencounterbtn::before {-webkit-mask-image:url(../image/endencounter.svg);}
 .encounter>.refreshbtn::before {-webkit-mask-image:url(../image/reload.svg);}
